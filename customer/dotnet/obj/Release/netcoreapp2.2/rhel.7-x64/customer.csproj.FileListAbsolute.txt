@@ -1,0 +1,15 @@
+/workspaces/istio-tutorial/customer/dotnet/bin/Release/netcoreapp2.2/rhel.7-x64/customer
+/workspaces/istio-tutorial/customer/dotnet/bin/Release/netcoreapp2.2/rhel.7-x64/customer.deps.json
+/workspaces/istio-tutorial/customer/dotnet/bin/Release/netcoreapp2.2/rhel.7-x64/customer.runtimeconfig.json
+/workspaces/istio-tutorial/customer/dotnet/bin/Release/netcoreapp2.2/rhel.7-x64/customer.runtimeconfig.dev.json
+/workspaces/istio-tutorial/customer/dotnet/bin/Release/netcoreapp2.2/rhel.7-x64/customer.dll
+/workspaces/istio-tutorial/customer/dotnet/bin/Release/netcoreapp2.2/rhel.7-x64/customer.pdb
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.csprojAssemblyReference.cache
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.csproj.CoreCompileInputs.cache
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.RazorAssemblyInfo.cache
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.RazorAssemblyInfo.cs
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.AssemblyInfoInputs.cache
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.AssemblyInfo.cs
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.RazorTargetAssemblyInfo.cache
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.dll
+/workspaces/istio-tutorial/customer/dotnet/obj/Release/netcoreapp2.2/rhel.7-x64/customer.pdb
