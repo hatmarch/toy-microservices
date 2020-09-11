@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RecommendationController {
 
-    private static final String RESPONSE_STRING_FORMAT = "recommendation v3 from '%s', Sekrit message for Firefox users: %d.\n";
+    private static final String RESPONSE_STRING_FORMAT = "recommendation v3 from '%s'.\n";
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
