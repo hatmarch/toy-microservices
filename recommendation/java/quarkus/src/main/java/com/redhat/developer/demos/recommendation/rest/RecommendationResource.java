@@ -32,7 +32,7 @@ public class RecommendationResource {
     public RecommendationResource()
     {
         try {
-            misbehave = Boolean.parseBoolean(System.getenv().getOrDefault("MISBEHAVE","true"));
+            misbehave = Boolean.parseBoolean(System.getenv().getOrDefault("MISBEHAVE","false"));
         }
         catch(Exception e)
         {
