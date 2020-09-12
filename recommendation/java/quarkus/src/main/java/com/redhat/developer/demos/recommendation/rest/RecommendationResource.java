@@ -60,7 +60,7 @@ public class RecommendationResource {
             return doMisbehavior();
         }
         return Response.ok(String.format(RESPONSE_STRING_FORMAT, HOSTNAME, count)).build();
-        // return Response.ok(String.format(RESPONSE_STRING_NOW_FORMAT, getNow(), HOSTNAME, count)).build();
+        //return Response.ok(String.format(RESPONSE_STRING_NOW_FORMAT, getNow(), HOSTNAME, count)).build();
     }
 
     private void timeout() {
