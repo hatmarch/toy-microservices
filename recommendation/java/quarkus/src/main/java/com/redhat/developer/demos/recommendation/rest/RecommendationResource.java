@@ -13,9 +13,7 @@ import org.jboss.logging.Logger;
 @Path("/")
 public class RecommendationResource {
 
-    private static final String RESPONSE_STRING_FORMAT = "recommendation v2-buggy from '%s': %d\n";
-
-    private static final String RESPONSE_STRING_NOW_FORMAT = "recommendation v3 %s from '%s': %d\n";
+    private static final String RESPONSE_STRING_FORMAT = "recommendation v3 from '%s': %d\n";
 
     private final Logger logger = Logger.getLogger(getClass());
 
@@ -60,7 +58,6 @@ public class RecommendationResource {
             return doMisbehavior();
         }
         return Response.ok(String.format(RESPONSE_STRING_FORMAT, HOSTNAME, count)).build();
-        //return Response.ok(String.format(RESPONSE_STRING_NOW_FORMAT, getNow(), HOSTNAME, count)).build();
     }
 
     private void timeout() {
@@ -91,13 +88,6 @@ public class RecommendationResource {
         this.misbehave = false;
         logger.debug("'misbehave' has been set to 'false'");
         return Response.ok("Following requests to / will return 200\n").build();
-    }
-
-    private String getNow() {
-        final Client client = ClientBuilder.newClient();
-        final Response res = client.target("http://worldclockapi.com/api/json/cet/now").request().get();
-        final String jsonObject = res.readEntity(String.class);
-        return Json.createReader(new ByteArrayInputStream(jsonObject.getBytes())).readObject().getString("currentDateTime");
     }
 
 }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RecommendationController {
 
-    private static final String RESPONSE_STRING_FORMAT = "recommendation v3 from '%s'.\n";
+    private static final String RESPONSE_STRING_FORMAT = "recommendation v2-buggy from '%s'.\n";
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -29,6 +29,17 @@ public class RecommendationController {
 
     static String parseContainerIdFromHostname(String hostname) {
         return hostname.replaceAll("recommendation-v\\d+-", "");
+    }
+
+    public RecommendationController()
+    {
+        try {
+            misbehave = Boolean.parseBoolean(System.getenv().getOrDefault("MISBEHAVE","true"));
+        }
+        catch(Exception e)
+        {
+            logger.info(String.format("Error reading MISBEHAVE environment variable: %s", e.getMessage()));
+        }
     }
 
     @RequestMapping("/")
