@@ -45,7 +45,7 @@ public class RecommendationController {
     @RequestMapping("/")
     public ResponseEntity<String> getRecommendations() {
         count++;
-        logger.debug(String.format("recommendation request from %s: %d", HOSTNAME, count));
+        logger.info(String.format("recommendation request from %s: %d", HOSTNAME, count));
 
         // timeout();
 
