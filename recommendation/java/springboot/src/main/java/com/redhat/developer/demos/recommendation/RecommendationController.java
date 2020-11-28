@@ -70,6 +70,11 @@ public class RecommendationController {
                 .body(String.format("recommendation misbehavior from '%s'\n", HOSTNAME));
     }
 
+    @RequestMapping("/health")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("Healthy\n");
+    }
+
     @RequestMapping("/misbehave")
     public ResponseEntity<String> flagMisbehave() {
         this.misbehave = true;
